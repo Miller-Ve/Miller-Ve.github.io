@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(209, 208, 208, 0.377);
+  border-radius: 50px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+header {
+  padding: 30px 85px;
+  font-family: "Raleway", sans-serif;
+}
+
+.menu-dekstop {
+  max-width: 100%;
+  display: flex;
+  float: right;
+  margin-top: -50px;
+}
+
+.menu-dekstop li {
+  padding: 0 25px;
+  list-style: none;
+}
+
+.menu-dekstop li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.menu-dekstop li a:hover {
+  font-weight: 700;
+  text-decoration: underline hsl(0, 0%, 100%);
+}
+
+.menu-mobile {
+  display: none;
+}
+
+#aling {
+  display: none;
+}
+
+/*illustration*/
+
+.ilustrations {
+  margin-top: 50px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ilustrations img {
+  max-width: 100%;
+}
+
+.description {
+  max-width: 100%;
+  margin-top: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description h1 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+}
+
+.description p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: hsl(0, 0%, 100%);
+  padding: 20px 0;
+}
+
+#get {
+  padding: 15px 70px;
+  border-radius: 35px;
+  outline: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background: hsl(198, 60%, 50%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+#get:hover {
+  background: rgba(255, 255, 255, 0.774);
+  opacity: 0.5;
+  color: black;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 400px;
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+.images h1 {
+  text-align: center;
+  position: relative;
+  left: -42%;
+  color: rgb(255, 255, 255);
+  font-family: "Raleway", sans-serif;
+}
+
+.images p {
+  text-align: center;
+  position: relative;
+  left: -42%;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+}
+
+.image-one,
+.image-two,
+.image-trhee,
+.image-four {
+  padding: 45px 0px;
+}
+
+/*productive*/
+
+.productive {
+  max-width: 100%;
+}
+
+.productive img {
+  margin: 100px 100px;
+}
+
+.productive h1 {
+  float: right;
+  margin-top: -400px;
+  position: relative;
+  left: -25%;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.productive p {
+  float: right;
+  margin-top: -310px;
+  margin-right: 40px;
+  color: rgb(255, 255, 255);
+}
+
+.description-all {
+  max-width: 100%;
+}
+
+.productive a {
+  position: relative;
+  top: -350px;
+  left: 56.7%;
+  max-width: 100%;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.productive a:hover {
+  text-decoration: underline hsl(0, 0%, 100%);
+}
+
+.productive a img {
+  position: relative;
+  top: 103px;
+  left: -7%;
+}
+
+/*testimonios*/
+
+.testimonios {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimonio-one {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 10px;
+  padding: 35px 20px;
+  height: 200px;
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 10px hsl(219, 30%, 18%);
+}
+
+.testimonio-one img {
+  width: 7%;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+}
+
+.profiles {
+  margin-left: 35px;
+  margin-top: -15px;
+}
+
+.profiles p {
+  font-size: 12px;
+}
+
+#quotes {
+  position: absolute;
+  left: 2%;
+  z-index: -100;
+  top: 392%;
+}
+
+/*access*/
+
+.access {
+  max-width: 100%;
+  margin-top: 200px;
+  position: relative;
+  left: 20%;
+  text-align: center;
+  background-color: hsl(217, 28%, 15%);
+  width: 60%;
+  padding: 50px 10px;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.access h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+.access p {
+  padding: 20px 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.access input[type="email"] {
+  max-width: 100%;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+}
+
+input:not(:placeholder-shown) {
+  padding: 15px 30px;
+}
+
+.access input:placeholder-shown {
+  max-width: 100%;
+  padding: 15px 30px;
+}
+
+.access input[type="submit"] {
+  max-width: 100%;
+  padding: 15px 45px;
+  border-radius: 35px;
+  outline: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background: hsl(198, 60%, 50%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.access input[type="submit"]:hover {
+  background: rgba(255, 255, 255, 0.774);
+  opacity: 0.5;
+  color: black;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+}
+
+/*footer*/
+
+footer {
+  max-width: 100%;
+  background-color: hsl(216, 53%, 9%);
+  min-height: 400px;
+  margin-top: -150px;
+}
+
+.content {
+  padding-left: 100px;
+  padding-top: 190px;
+}
+
+#logo {
+  width: 10%;
+}
+
+.ubication p {
+  padding-left: 50px;
+  color: hsl(0, 0%, 100%);
+}
+
+#ubication {
+  position: relative;
+  top: 25px;
+}
+
+.contact {
+  position: relative;
+  left: 36%;
+  top: -65px;
+}
+
+span {
+  display: block;
+  padding: 5px 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.contact img {
+  padding: 0 25px;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  float: right;
+  position: relative;
+  right: 20%;
+  margin-top: -125px;
+  width: 20%;
+  gap: 10px;
+}
+
+.contact-list li {
+  max-width: 100%;
+  list-style: none;
+}
+
+.contact-list li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.contact-list li a:hover {
+  font-weight: 700;
+}
+
+.icons-list {
+  float: right;
+  margin-top: -135px;
+  position: relative;
+  right: 5%;
+  font-size: 28px;
+}
+
+.icons-list a {
+  padding: 0 5px;
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s ease all;
+}
+
+.icons-list a:hover {
+  color: hsl(198, 60%, 50%);
+}
+
+@media screen and (max-width: 950px) {
+  #logo-mobile {
+    margin-left: -50px;
+    width: 60%;
+  }
+
+  .menu-dekstop {
+    display: none;
+  }
+
+  #aling {
+    display: block;
+    float: right;
+    margin-right: -65px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+  #menu-phone {
+    position: relative;
+    left: -20%;
+    background-color: white;
+    width: 150%;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-radius: 15px;
+  }
+
+  #menu-phone li {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #menu-phone li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+
+  #menu-phone li a:hover {
+    text-decoration: underline hsl(0, 0%, 0%);
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .images .image-one,
+  .images-two,
+  .image-trhee,
+  .image-four {
+    padding: 50px 0;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+    margin-left: 145px;
+    padding: 50px 0;
+  }
+
+  .images p {
+    position: relative;
+    left: -30%;
+    padding: 20px 0;
+  }
+
+  .images h1 {
+    position: relative;
+    left: -30%;
+  }
+
+  .description-all {
+    margin-top: 350px;
+  }
+
+  .productive img {
+    width: 90%;
+    margin: 60px 18px;
+  }
+
+  .productive h1 {
+    position: relative;
+    text-align: left;
+    padding: 25px 0;
+  }
+
+  .productive p {
+    font-weight: 100;
+    padding: 25px 16px;
+  }
+
+  .productive a {
+    position: relative;
+    top: -190px;
+    left: 5%;
+  }
+
+  .productive a img {
+    position: relative;
+    left: -4%;
+    top: 65px;
+    width: 5%;
+  }
+
+  .testimonio-one {
+    position: relative;
+    right: 0%;
+    min-height: 250px;
+    margin-top: 50px;
+  }
+
+  .testimonio-one img {
+    width: 9%;
+  }
+
+  .profiles {
+    padding: 0 10px;
+  }
+
+  #quotes {
+    display: none;
+  }
+
+  footer {
+    min-height: 900px;
+  }
+
+  .contact {
+    position: relative;
+    top: 50px;
+    left: -20%;
+  }
+
+  #ubication {
+    position: relative;
+    left: -10%;
+  }
+
+  .ubication p {
+    position: relative;
+    left: -11%;
+  }
+
+  #logo {
+    position: relative;
+    left: -10%;
+    width: 35%;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    left: -60%;
+    width: 50%;
+  }
+
+  .icons-list {
+    position: relative;
+    top: 450px;
+    left: 6%;
+  }
+}
